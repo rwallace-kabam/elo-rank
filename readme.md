@@ -21,7 +21,7 @@ var playerB = 1400;
 var expectedScoreA = elo.getExpected(playerA, playerB);
 var expectedScoreB = elo.getExpected(playerB, playerA);
 
-//update score, 1 if won 0 if lost
+//update score, 1 if won, 0 if lost, 0.5 if draw
 playerA = elo.updateRating(expectedScoreA, 1, playerA);
 playerB = elo.updateRating(expectedScoreB, 0, playerB);
 ```
